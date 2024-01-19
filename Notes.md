@@ -1,24 +1,24 @@
 
+# Day 1
 
+## Hello There
+```pythonprint("Hello There")```
 
+## Input prompt for the user
+```input("What is your name? ")```
 
-# Hello There
-print("Hello There")
+## Variables give a name to a piece of data, like a box with a label. Notice a str needs "" and an int doesn't.
+```my_age = 12
+    my_name = "NatYolo"
+```
 
-# Input prompt for the user
-input("What is your name? ")
-
-# Variables give a name to a piece of data, like a box with a label. Notice a str needs "" and an int doesn't.
-my_age = 12
-my_name = "NatYolo"
-
-# The += Operator - This is a convenient way of saying: take the previous value and add to it.
-my_age = 12
+## The += Operator - This is a convenient way of saying: take the previous value and add to it - my age is now 16.
+```my_age = 12
 my_age += 4
-# my age is now 16.
+```
 
-# To add a paragraph break, a new paragraph put in \n
-print("Hello World\nHello World")
+## To add a paragraph break, a new paragraph put in \n
+```print("Hello World\nHello World")```
 
 # Data Types
 ## Strings - "Hey" or "123" with double quotes.
