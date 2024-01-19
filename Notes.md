@@ -1,32 +1,44 @@
 
-# Day 1
-
-## Hello There
-```pythonprint("Hello There")```
-
-## Input prompt for the user
-```input("What is your name? ")```
-
-## Variables give a name to a piece of data, like a box with a label. Notice a str needs "" and an int doesn't.
-```my_age = 12
-    my_name = "NatYolo"
+#### Hello There
+```python
+print("Hello There")
 ```
 
-## The += Operator - This is a convenient way of saying: take the previous value and add to it - my age is now 16.
-```my_age = 12
+#### Input prompt for the user
+```python
+input("What is your name? ")
+```
+
+#### Variables give a name to a piece of data, like a box with a label. Notice a str needs "" and an int doesn't.
+```python
+my_age = 12
+my_name = "NatYolo"
+```
+
+#### The += Operator - This is a convenient way of saying: take the previous value and add to it - my age is now 16.
+```python
+my_age = 12
 my_age += 4
 ```
 
-## To add a paragraph break, a new paragraph put in \n
-```print("Hello World\nHello World")```
+#### To add a paragraph break, a new paragraph put in \n
+```python
+print("Hello World\nHello World")
+```
 
-# Data Types
-## Strings - "Hey" or "123" with double quotes.
+### Data Types
+
+#### Strings - "Hey" or "123" with double quotes.
+```python
 print("Hello")
+```
 
-## Integer - Whole numbers without decimal places.
+### Integer
+Whole numbers without decimal places.
+```python
 print(123)
 print(123 + 456)
+```
 
 ## Float - Floating point number, decimal number.
 print(3.14159)
