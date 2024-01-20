@@ -325,29 +325,34 @@ if condition = false
 
 ## Modules
 
+Modular programming refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application.
+
 ```python
-import Day2         # This will import the module, folder, or file.
-print(Day2.age)     # This will print out that variable from the file.
+import my_module.py         # This will import the module, folder, or file.
+print(my_module.pi)     # This will print out that variable from the file.
 ```
 
 ### Random Numbers
 
 ```python
 import random
-numbers = random.randint(0, 100)
-random_float = random.random
+
+random_int = random.randint(0, 100)
+random_float = random.random()
 ```
 
-### Lists
+<br>
+
+## Lists
 
 ```python
-states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
-states = states_of_america  # Can create a variable from a list(variable).
+states = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 
-(states[0])         # Specifies the item from the list, 0 is Delaware.
-(states[-2])        # Index will also go backward.
-print(states[0])    # Prints Delaware - Needs brackets inside the list or square brackets.
-print(states[0][0]) # Prints D (First letter of the item from that list.)
+(states[0])                 # Specifies the item from the list, 0 is Delaware.
+(states[-2])                # Index will also go backward.
+print(states[0])            # Prints Delaware - Needs brackets inside the list or square brackets.
+print(states[0][0])         # Prints D (First letter of the item from that list.)
+states[-1] = "KALOfornia"   # This will alter the data [-1] a different string.
 ```
 
 Specifies the indexed item listed, then changes its name.
