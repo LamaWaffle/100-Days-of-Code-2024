@@ -345,31 +345,42 @@ random_float = random.random()
 
 ## Lists
 
+https://docs.python.org/3/tutorial/datastructures.html
+
 ```python
 states = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 
 (states[0])                 # Specifies the item from the list, 0 is Delaware.
 (states[-2])                # Index will also go backward.
-print(states[0])            # Prints Delaware - Needs brackets inside the list or square brackets.
-print(states[0][0])         # Prints D (First letter of the item from that list.)
-states[-1] = "KALOfornia"   # This will alter the data [-1] a different string.
-```
+(states[0][0])              # Specifies D (First letter of the item from that list.)
+(states[0]) = "New York"    # Specifies the indexed item listed, then changes its name.
 
-Specifies the indexed item listed, then changes its name.
-
-```python
-(states[0]) = "New York"
 states.append("New state")  # add an item to the end of the list
-states.extend(["New Landtown", "Bobtown", "State1"])  # adds this list to the current list.
+states.extend(["New Landtown", "Bobtown", "State1"])  # adds this list to the current list.               
+states.index("Delaware")    # output for this function will be 0.
 
-# list.index() >> the output will be the index number of the item in the list
-states.index("Delaware")  # output for this function will be 0
+print(len(states_of_america))       # Returns the amount of items from the list.
+print(len(states_of_america[0]))    # Returns the amount of letter in the first item of the list.
+
+# This will return an index error, since the total amount of items in the list is 50, but since computers work from 0, it logs 49. We are off by 1.
+print(states_of_america[num_of_states])     
+print(states_of_america[num_of_states - 1])     # To overcome this, add '-1' to the list.
 
 # List data type and dictionary data type, notice the {} brackets
 student_grades_list = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
 student_grades_dict = {"Marry": 8.2, "John": 4.2, "Stacey": 5.9}
-
 ```
+### Nested Lists
+Lists can also be included into already existing lists, called Nested Lists.
+```python
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+dirty_dozen = [fruits, vegetables]
+print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second list, then the second word of the second list then the second letter.
+```
+
+
+
 
 ### Dictionaries
 
