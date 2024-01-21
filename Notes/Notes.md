@@ -33,6 +33,10 @@ print("Hello World\nHello World")
 <br>
 
 ## Data Types
+In Python programming, a data type is the classification of data that defines the possible operations that can be done on the object.
+
+![img.png](img.png)
+
 
 ### Strings
 
@@ -381,7 +385,22 @@ print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second li
 
 
 ### Loop Function
-For loops `for` will execute a block of code a fixed number of times.
+Python `while` loop is used to run a block code until a certain condition is met
+
+```python
+# program to display numbers from 1 to 5
+
+# initialize the variable
+i = 1   # condition, it should be a true statement.
+n = 5
+
+# while loop from i = 1 to 5
+while i <= n:
+    print(i)
+    i = i + 1
+```
+<br>
+
 For loops `for` will execute a block of code a fixed number of times.
 You can iterate over a range, string sequence etc.
 ```python
@@ -391,19 +410,23 @@ for states in states_of_america:
     print(states)
     print(states + " of America")
 
-# Output >
-# Texas
-# Texas of America
-# Utah
-# Utah of America
-# Florida
-# Florida of America
+    
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for num in my_list:
+    if num % 2 == 0:    # Check for even.
+        print(f"Even {num}")
+    else:
+        print(f"Odd number: {num}")
 ```
 
 
 
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
