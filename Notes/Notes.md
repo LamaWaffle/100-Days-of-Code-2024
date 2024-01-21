@@ -362,6 +362,8 @@ states = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 states.append("New state")  # add an item to the end of the list
 states.extend(["New Landtown", "Bobtown", "State1"])  # adds this list to the current list.               
 states.index("Delaware")    # output for this function will be 0.
+states.capitalize()         # Capitalizes the first letter of the string.
+states.title()              # Capitalizes the first letter of each word.
 
 print(len(states_of_america))       # Returns the amount of items from the list.
 print(len(states_of_america[0]))    # Returns the amount of letter in the first item of the list.
