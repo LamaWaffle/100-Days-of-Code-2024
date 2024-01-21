@@ -380,6 +380,35 @@ print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second li
 ```
 
 
+### Loop Function
+For loops `for` will execute a block of code a fixed number of times.
+For loops `for` will execute a block of code a fixed number of times.
+You can iterate over a range, string sequence etc.
+```python
+states_of_america = ["Texas", "Utah", "Florida"]
+
+for states in states_of_america:
+    print(states)
+    print(states + " of America")
+
+# Output >
+# Texas
+# Texas of America
+# Utah
+# Utah of America
+# Florida
+# Florida of America
+```
+
+
+
+
+
+
+
+
+
+
 
 
 ### Dictionaries
@@ -418,5 +447,3 @@ print(student_grades_list.count(10.0))  # Counts the amount of times 10 was in t
 
 print(random.choice(Name_of_List))  # Can also directly randomly pick from the list.
 ```
-
-### Loop Function

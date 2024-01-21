@@ -30,18 +30,15 @@ scissors = '''
 game_images = [rock, paper, scissors]  # This is putting the images into a list.
 
 # User logic
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))  # Collect
-# users input, convert to an integer, prints action.
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))  # Collect users input, convert to an integer, prints action.
 if user_choice >= 3 or user_choice < 0:
-    print("You typed an invalid number - GAME OVER!")  # This is a catch in-case the users input was invalid.
-    # If the result is invalid, it ends the game.
+    print("You typed an invalid number - GAME OVER!")  # This is a catch in-case the users input was invalid. If the result is invalid, it ends the game.
 
 else:
     print(game_images[user_choice])
 
     # Computer logic
-    computer_choice = random.randint(0, 2)  # Generate a random number from 0, 1 and 2, assign
-    # it to computers_choice.
+    computer_choice = random.randint(0, 2)  # Generate a random number from 0, 1 and 2, assign it to computers_choice.
     print("Computer chose:")
     print(game_images[computer_choice])
 
