@@ -5,5 +5,3 @@ while password != "abc123":           # This essentially checks if the password 
     password = input("Incorrect - Please enter your password: \n")
 
 print("Password was correct!\nWelcome Matthew!")
-
-

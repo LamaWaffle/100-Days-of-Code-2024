@@ -15,3 +15,5 @@ average = total_height // num_of_students
 print(f"Total height = {total_height}")
 print(f"number of students = {num_of_students}")
 print(f"average height = {average}")
+
+print("There is something ")
