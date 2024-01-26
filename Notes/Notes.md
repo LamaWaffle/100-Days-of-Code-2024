@@ -205,9 +205,8 @@ Logical operators are used to combine multiple conditions together and evaluate 
 ### and
 
 The `and` operator returns `True` if both conditions it is evaluating are true, otherwise it returns `False`.
-
-```python
 This expects both conditions either side of the 'and' to be true.
+```python
 a = 58
 if a < 60 and a > 50:
     print("Your grade is C")
@@ -215,7 +214,8 @@ if a < 60 and a > 50:
 
 ### or
 
-In Python, the `or` operator is used to combine two or more conditions in a logical expression. The resulting expression evaluates to True if at least one of the conditions is `True`.
+In Python, the `or` operator is used to combine two or more conditions in a logical expression. 
+The resulting expression evaluates to True if at least one of the conditions is `True`.
 
 ```python
 x = 5
@@ -341,7 +341,7 @@ print(my_module.pi)     # This will print out that variable from the file.
 ```python
 import random
 
-random_int = random.randint(0, 100)
+random_int = random.randint(0, 101 )    # 100 is now included.
 random_float = random.random()
 ```
 
@@ -354,10 +354,10 @@ https://docs.python.org/3/tutorial/datastructures.html
 ```python
 states = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 
-(states[0])                 # Specifies the item from the list, 0 is Delaware.
-(states[-2])                # Index will also go backward.
-(states[0][0])              # Specifies D (First letter of the item from that list.)
-(states[0]) = "New York"    # Specifies the indexed item listed, then changes its name.
+states[0]                   # Specifies the item from the list, 0 is Delaware.
+states[-2]                  # Index will also go backward.
+states[0][0]                # Specifies D (First letter of the item from that list.)
+states[0] = "New York"      # Specifies the indexed item listed, then changes its name.
 
 states.append("New state")  # add an item to the end of the list
 states.extend(["New Landtown", "Bobtown", "State1"])  # adds this list to the current list.               
