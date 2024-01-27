@@ -349,7 +349,8 @@ random_float = random.random()
 
 ## Lists
 
-https://docs.python.org/3/tutorial/datastructures.html
+https://docs.python.org/3/tutorial/datastructures.html <br>
+https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet
 
 ```python
 states = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
@@ -363,6 +364,9 @@ states[0] = "New York"      # Specifies the indexed item listed, then changes it
 states.append("New state")  # add one item to the end of the list
 states.extend(["New Landtown", "Bobtown"])  # adds multiple items to the current list.               
 states.index("Delaware")    # output for this function will be 0 (list.index(element, start, end)
+states[-1] = "New Value"    # This will find the indexed item and replace it.
+states.remove("Delaware")   # This will remove 'delaware' from the list.
+states[1].remove()          # removes item in nested list.
 states.capitalize()         # Capitalizes the first letter of the string.
 states.title()              # Capitalizes the first letter of each word.
 states.sort()               # Does return any value, changes original list.
@@ -378,7 +382,7 @@ print(states_of_america[num_of_states - 1])     # To overcome this, add '-1' to 
 student_grades_list = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
 student_grades_dict = {"Marry": 8.2, "John": 4.2, "Stacey": 5.9}
 ```
-### Nested Lists
+### Nested Lists (2D Lists)
 Lists can also be included into already existing lists, called Nested Lists.
 ```python
 fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
@@ -387,27 +391,11 @@ dirty_dozen = [fruits, vegetables]
 print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second list, then the second word of the second list then the second letter.
 ```
 
-
-### Loop Function
-Python `while` loop is used to run a block code until a certain condition is met<br>
-https://www.programiz.com/python-programming/while-loop
-
-```python
-# program to display numbers from 1 to 5
-
-# initialize the variable
-i = 1   # condition, it should be a true statement.
-n = 5
-
-# while loop from i = 1 to 5
-while i <= n:
-    print(i)
-    i = i + 1
-```
 <br>
 
+## Loop Function
 For loops `for` will execute a block of code a fixed number of times.
-You can iterate over a range, string sequence etc.<br>
+You can iterate over a range, string or sequence etc.<br>
 https://www.programiz.com/python-programming/for-loop
 ```python
 states_of_america = ["Texas", "Utah", "Florida"]
@@ -427,8 +415,23 @@ languages = ['Swift', 'Python', 'Go']
 for i in languages:
     print(i)
 ```
+<br>
 
+Python `while` loop is used to run a block code until a certain condition is met<br>
+https://www.programiz.com/python-programming/while-loop
 
+```python
+# program to display numbers from 1 to 5
+
+# initialize the variable
+i = 1   # condition, it should be a true statement.
+n = 5
+
+# while loop from i = 1 to 5
+while i <= n:
+    print(i)
+    i = i + 1
+```
 
 <br>
 <br>
