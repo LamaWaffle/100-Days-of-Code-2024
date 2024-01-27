@@ -356,19 +356,21 @@ states = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
 
 states[0]                   # Specifies the item from the list, 0 is Delaware.
 states[-2]                  # Index will also go backward.
-states[0][0]                # Specifies D (First letter of the item from that list.)
+states[0][0]                # Specifies D (First letter then the firs item from that list.)
 states[0] = "New York"      # Specifies the indexed item listed, then changes its name.
 
-states.append("New state")  # add an item to the end of the list
-states.extend(["New Landtown", "Bobtown", "State1"])  # adds this list to the current list.               
-states.index("Delaware")    # output for this function will be 0.
+# List methods
+states.append("New state")  # add one item to the end of the list
+states.extend(["New Landtown", "Bobtown"])  # adds multiple items to the current list.               
+states.index("Delaware")    # output for this function will be 0 (list.index(element, start, end)
 states.capitalize()         # Capitalizes the first letter of the string.
 states.title()              # Capitalizes the first letter of each word.
+states.sort()               # Does return any value, changes original list.
 
 print(len(states_of_america))       # Returns the amount of items from the list.
 print(len(states_of_america[0]))    # Returns the amount of letter in the first item of the list.
 
-# This will return an index error, since the total amount of items in the list is 50, but since computers work from 0, it logs 49. We are off by 1.
+# This will return an index error, since the total amount of items in the list is 50,but since computers work from 0, it logs 49. We are off by 1.
 print(states_of_america[num_of_states])     
 print(states_of_america[num_of_states - 1])     # To overcome this, add '-1' to the list.
 
@@ -387,7 +389,8 @@ print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second li
 
 
 ### Loop Function
-Python `while` loop is used to run a block code until a certain condition is met
+Python `while` loop is used to run a block code until a certain condition is met<br>
+https://www.programiz.com/python-programming/while-loop
 
 ```python
 # program to display numbers from 1 to 5
@@ -404,7 +407,8 @@ while i <= n:
 <br>
 
 For loops `for` will execute a block of code a fixed number of times.
-You can iterate over a range, string sequence etc.
+You can iterate over a range, string sequence etc.<br>
+https://www.programiz.com/python-programming/for-loop
 ```python
 states_of_america = ["Texas", "Utah", "Florida"]
 
@@ -413,12 +417,15 @@ for states in states_of_america:
     print(states + " of America")
 
     
-my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for num in my_list:
-    if num % 2 == 0:    # Check for even.
-        print(f"Even {num}")
-    else:
-        print(f"Odd number: {num}")
+# iterate from i = 0 to i = 3
+for i in range(4):
+    print(i)
+
+
+languages = ['Swift', 'Python', 'Go']
+# access items of a list using for loop
+for i in languages:
+    print(i)
 ```
 
 
