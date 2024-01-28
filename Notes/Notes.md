@@ -347,10 +347,11 @@ random_float = random.random()
 
 <br>
 
-## Lists
+## Lists (Arrays)
 
 https://docs.python.org/3/tutorial/datastructures.html <br>
-https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet
+https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet <br>
+https://www.codecademy.com/resources/docs/python/lists
 
 ```python
 states = ["Delaware", "Pennsylvania", "New Jersey", "Kentucky", "California"]
@@ -361,18 +362,28 @@ states[0][0]                # Specifies D (First letter then the firs item from 
 states[0] = "New York"      # Specifies the indexed item listed, then changes its name.
 
 # List methods
-states.append("New state")  # add one item to the end of the list
-states.extend(["New Landtown", "Bobtown"])  # adds multiple items to the current list.               
-states.index("Delaware")    # output for this function will be 0 (list.index(element, start, end)
-states[-1] = "New Value"    # This will find the indexed item and replace it.
-states.remove("Delaware")   # This will remove 'delaware' from the list.
-states[1].remove()          # removes item in nested list.
-states.capitalize()         # Capitalizes the first letter of the string.
-states.title()              # Capitalizes the first letter of each word.
-states.sort()               # Does return any value, changes original list.
+states.append("New state")  # add one item to the end of the list.
+states[2].append('pass')    # Append within a nested list.
 
-print(len(states_of_america))       # Returns the amount of items from the list.
-print(len(states_of_america[0]))    # Returns the amount of letter in the first item of the list.
+states.extend(["New Landtown", "Bobtown"])  # adds multiple items to the current list.               
+states.index("Delaware")        # output for this function will be 0 (list.index(element, start, end)
+states[-1] = "New Value"        # This will find the indexed item and replace it.
+
+states.remove("Delaware")       # This will remove 'delaware' from the list.
+states[1].remove()              # removes item in nested list.
+
+states.capitalize()             # Capitalizes the first letter of the string.
+states.title()                  # Capitalizes the first letter of each word.
+states.sort() / sorted()        # Does return any value, changes original list.
+
+.pop()                           # remove an element from index or from the end of a list.
+.range()                         # Find the range
+.count()                         # counts the number of occurrences of an element in the list
+.insert()                        # insert an element into spec index of list.
+
+
+(len(states_of_america))       # Returns the amount of items from the list.
+(len(states_of_america[0]))    # Returns the amount of letter in the first item of the list.
 
 # This will return an index error, since the total amount of items in the list is 50,but since computers work from 0, it logs 49. We are off by 1.
 print(states_of_america[num_of_states])     
