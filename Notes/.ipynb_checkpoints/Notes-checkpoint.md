@@ -354,35 +354,48 @@ https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/chea
 https://www.codecademy.com/resources/docs/python/lists
 
 ```python
-inventory = ["twin bed", "single bed", "headboard", "queen bed", "king bed"]
+states = ["Delaware", "Pennsylvania"]
 
-inventory[0]                        # Specifies the indexed item. Prints 'twin bed'.
-inventory[0] = 'single bed'         # Specifies the indexed item listed, then changes its name.
-inventory[-1]                       # index can go in reverse, this will print 'kings bed'.
-inventory[0][1]                     # Specifies the indexed item within a nested list. This will print T.
-inventory.index("twin bed")         # output for this function will be 0 (list.index(element, start, end)
+states[0]                       # Selects (print) the item from the list, 0 is Delaware.
+states[-1]                      # Index will also go backward. -1 Being the last item.
+states[0][0]                    # Specifies D (First letter then the firs item from that list.)
+states[0] = "New York"          # Specifies the indexed item listed, then changes its name.
 
-len(inventory)                      # Outputs the length of the list.
-inventory[0:3]                      # This is a slice, ['start':'no more than x']
-inventory.count("twin bed")         # This is counting how many 'twin bed' strings there are.
-inventory.pop(4)                    # Pop can specify which index and store the value in a variable.
-inventory.insert(10, "2")  # Adding string into index 11th position.
-inventory.append('New state')       # add one item to the END of the list.
-inventory[2].append('bed')          # Append within a nested list.
-inventory.extend(["New", "new2"])   # adds multiple items to the current list. 
+# List methods
+states[0:4]                     # This wil slice the list up to index 4. (no more than 4)
+print(states[:1])             # Will print no more than the second item.
+print(states[-1:])            # Slices all but the last item in the list.
 
-inventory.sort()                    # Sort keeps the original list intact, sorts the list.
-sorted(inventory)                   # This is similar, but can create a new variable for the sorted list.
+states.append("New state")      # add one item to the END of the list.
+states[2].append('pass')        # Append within a nested list.
+states.insert(0, 'utah')        # insert an element into specified index of list.
 
-inventory.remove("single bed")      # This will remove 'single bed' from the list.
-inventory[1].remove(x)              # removes item in nested list.
+states.extend(["New", "new2"])  # adds multiple items to the current list.               
+states.index("Delaware")        # output for this function will be 0 (list.index(element, start, end)
+states[-1] = "New Value"        # This will find the indexed item and replace it.
 
-inventory.capitalize()              # Capitalizes the first letter of the string.
+states.remove("Delaware")       # This will remove 'delaware' from the list.
+states[1].remove(x)             # removes item in nested list.
 
-inventory.range(5)                  # Find the range between 0 (default) and 5.
-inventory.range(2, 11, 2)           # Find the range between 2, and before 11, steps in 2.
+states.capitalize()             # Capitalizes the first letter of the string.
+states.title()                  # Capitalizes the first letter of each word.
+states.sort()                   # Does return any value, changes original variable.
+sorted(states)                  # Will sort, but does NOT change the original variable.
 
-list(inventory)                     # Converts array into a list.
+states.pop()                    # remove an element FROM THE INDEX or from the end of a list.
+states.range()                  # Find the range between an integer.
+states.count("y")               # counts the number of occurrences of Y in the list
+
+
+zero_to_seven = range(8)        # generates a range from 0 to 7.
+print(list(zero_to_seven))      # Converts and prints the list ([0, 1, 2, 3, 4, 5, 6, 7])
+
+(len(states))        # Returns the amount of items from the list.
+(len(states[0]))     # Returns the amount of letter in the first item of the list.
+
+# This will return an index error, since the total amount of items in the list is 50,but since computers work from 0, it logs 49. We are off by 1.
+print(states_of_america[num_of_states])     
+print(states_of_america[num_of_states - 1])     # To overcome this, add '-1' to the list.
 ```
 ### Nested Lists (2D Lists)
 Lists can also be included into already existing lists, called Nested Lists.

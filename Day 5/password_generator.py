@@ -14,17 +14,17 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 
 password_list = []
 
-for _ in range(0, nr_letters):
+for i in range(0, nr_letters):
     rando_letters = random.randint(0, len(letters) - 1)
     password_list.append(letters[rando_letters])
 
 
-for _ in range(0, nr_numbers):
+for i in range(0, nr_numbers):
     rando_numbers = random.randint(0, len(numbers) - 1)
     password_list.append(numbers[rando_numbers])
 
 
-for _ in range(0, nr_symbols):
+for i in range(0, nr_symbols):
     rando_symbols = random.randint(0, len(symbols) - 1)
     password_list.append(symbols[rando_symbols])
 
