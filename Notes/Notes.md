@@ -33,10 +33,10 @@ print("Hello World\nHello World")
 <br>
 
 ## Data Types
+
 In Python programming, a data type is the classification of data that defines the possible operations that can be done on the object.
 
 ![img.png](img.png)
-
 
 ### Strings
 
@@ -206,6 +206,7 @@ Logical operators are used to combine multiple conditions together and evaluate 
 
 The `and` operator returns `True` if both conditions it is evaluating are true, otherwise it returns `False`.
 This expects both conditions either side of the 'and' to be true.
+
 ```python
 a = 58
 if a < 60 and a > 50:
@@ -214,7 +215,7 @@ if a < 60 and a > 50:
 
 ### or
 
-In Python, the `or` operator is used to combine two or more conditions in a logical expression. 
+In Python, the `or` operator is used to combine two or more conditions in a logical expression.
 The resulting expression evaluates to True if at least one of the conditions is `True`.
 
 ```python
@@ -349,9 +350,9 @@ random_float = random.random()
 
 ## Lists (Arrays)
 
-https://docs.python.org/3/tutorial/datastructures.html <br>
-https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet <br>
-https://www.codecademy.com/resources/docs/python/lists
+<https://docs.python.org/3/tutorial/datastructures.html> <br>
+<https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-lists/cheatsheet> <br>
+<https://www.codecademy.com/resources/docs/python/lists>
 
 ```python
 inventory = ["twin bed", "single bed", "headboard", "queen bed", "king bed"]
@@ -384,8 +385,11 @@ inventory.range(2, 11, 2)           # Find the range between 2, and before 11, s
 
 list(inventory)                     # Converts array into a list.
 ```
+
 ### Nested Lists (2D Lists)
+
 Lists can also be included into already existing lists, called Nested Lists.
+
 ```python
 fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
 vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
@@ -395,10 +399,13 @@ print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second li
 
 <br>
 
-## Loop Function
-For loops `for` will execute a block of code a fixed number of times.
-You can iterate over a range, string or sequence etc.<br>
-https://www.programiz.com/python-programming/for-loop
+## Loops
+
+Loops are control flow statements.
+Python `for` loops execute a block of code a fixed number of times.
+You can iterate over a range, string or sequence etc.
+<https://www.programiz.com/python-programming/for-loop>
+
 ```python
 states_of_america = ["Texas", "Utah", "Florida"]
 
@@ -416,16 +423,15 @@ languages = ['Swift', 'Python', 'Go']
 for i in languages:
     print(i)
 ```
-<br>
 
-Python `while` loop is used to run a block code until a certain condition is met<br>
-https://www.programiz.com/python-programming/while-loop
+Python `while` loop is used to run a block code until a certain condition is met
+<https://www.programiz.com/python-programming/while-loop>
 
 ```python
 # program to display numbers from 1 to 5
 
 # initialize the variable
-i = 1   # condition, it should be a true statement.
+i = 1   # condition, it should be a true statement. 
 n = 5
 
 # while loop from i = 1 to 5
@@ -434,19 +440,23 @@ while i <= n:
     i = i + 1
 ```
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+## Functions
 
+Functions are a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time. Different to loops which are used to repeat a block of code, functions are used to perform a specific task.
 
+Functions are a way to group code together. There are built in functions and you can also create your own.
+For example, print() and len() are built in functions.
 
+```python
+# To create our own function, we use the def keyword. (Notice the indent.)
+def my_function():
+    print('Hello')
+    print('Bye')
 
+my_function()   # Since functins only run when they are called, we need to call it.
+```
 
-
-
+<!-- 
 ### Dictionaries
 
 Dictionaries are used to store data values in "key:value" pairs.
@@ -463,7 +473,7 @@ print(thisdict["brand"])  # output: "Ford"
 
 # do not allow duplicate in dictionary data:
 thisdict = {
-    "brand": "Ford",
+    "brand": "Ford", 
     "model": "Mustang",
     "year": 1964,
     "year": 2020
@@ -487,4 +497,4 @@ print(max_grades)
 print(student_grades_list.count(10.0))  # Counts the amount of times 10 was in the list.
 
 print(random.choice(Name_of_List))  # Can also directly randomly pick from the list.
-```
+``` -->
