@@ -401,6 +401,8 @@ print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second li
 
 ## Loops
 
+![img](image.png)
+
 Loops are control flow statements.
 Python `for` loops execute a block of code a fixed number of times.
 You can iterate over a range, string or sequence etc.
@@ -431,14 +433,20 @@ Python `while` loop is used to run a block code until a certain condition is met
 # program to display numbers from 1 to 5
 
 # initialize the variable
-i = 1   # condition, it should be a true statement. 
+i = 1   # condition, it should be a true statement.
 n = 5
 
 # while loop from i = 1 to 5
 while i <= n:
-    print(i)
-    i = i + 1
+    print('i is less than n')
+
+while not i <= n:
+    print('i is not less than n')
+    # Using a negation of 'not'.
+
 ```
+
+
 
 ## Functions
 
