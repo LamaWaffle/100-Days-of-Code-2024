@@ -454,6 +454,63 @@ while count <= 3:
 
 # Multiple lines, notice the ; <--
 while count <= 3: print(count); count += 1
+```
+<br>
+
+### Loop Breaks
+Completely terminates the loop and exits it immediately. Execution continues after the loop.
+```python
+items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
+
+for item in items_on_sale:
+  print(item)
+  if item == "knit dress":
+    break  # Instead of the loop continuing to interate, it breaks at knit dress.
+
+print("End of search!")
+
+while counter < 10:
+    counter += 1
+    if randint(1,11) == 11:
+        print ('Won!')
+        break
+else:
+	print ('done')
+# Won!
+```
+### Loop Continues
+Continues do not terminate the loop. It skips the current iteration and continues to the next iteration of the loop.
+```python
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for int in ages:
+  if int < 18:  # if 12 is < 18 (True), skip. Otherwise, print integer.
+    continue
+  print(int)
+```
+### Nested Loops
+Useful for pulling data from nested lists.
+```python
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+
+scoops_sold = 0
+
+for location in sales_data:
+  print(location)
+  for scoops in location:
+    scoops_sold += scoops
+    print(scoops_sold)
+print(scoops_sold)
+```
+<br>
+
+## List Comprehensions
+
+```python
+new_list = [<expression> for <element> in <collection>]
+
+
+
 
 ```
 
