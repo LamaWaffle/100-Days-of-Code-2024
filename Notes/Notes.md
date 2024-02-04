@@ -344,6 +344,7 @@ import random
 
 random_int = random.randint(0, 101 )    # 100 is now included.
 random_float = random.random()
+random.choice(list_)    # Picks a random parameter from a list, string or tuple.
 ```
 
 <br>
