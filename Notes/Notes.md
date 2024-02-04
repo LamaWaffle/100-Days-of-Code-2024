@@ -364,14 +364,14 @@ inventory[-1]                       # index can go in reverse, this will print '
 inventory[0][1]                     # Specifies the indexed item within a nested list. This will print T.
 inventory.index("twin bed")         # output for this function will be 0 (list.index(element, start, end)
 
-len(inventory)                      # Outputs the length of the list.
+
 inventory[0:3]                      # This is a slice, ['start':'no more than x']
 inventory.count("twin bed")         # This is counting how many 'twin bed' strings there are.
 inventory.pop(4)                    # Pop can specify which index and store the value in a variable.
-inventory.insert(10, "2")  # Adding string into index 11th position.
+inventory.insert(10, "2")           # Adding string into index 11th position.
 inventory.append('New state')       # add one item to the END of the list.
 inventory[2].append('bed')          # Append within a nested list.
-inventory.extend(["New", "new2"])   # adds multiple items to the current list. 
+inventory.extend(["New", "new2"])   # adds multiple items to the current list.
 
 inventory.sort()                    # Sort keeps the original list intact, sorts the list.
 sorted(inventory)                   # This is similar, but can create a new variable for the sorted list.
@@ -384,7 +384,10 @@ inventory.capitalize()              # Capitalizes the first letter of the string
 inventory.range(5)                  # Find the range between 0 (default) and 5.
 inventory.range(2, 11, 2)           # Find the range between 2, and before 11, steps in 2.
 
+len(inventory)                      # Outputs the length of the list.
 list(inventory)                     # Converts array into a list.
+
+new_list = zip(inventory, bedding)  # This is a function that combines multiple lists into one.
 ```
 
 ### Nested Lists (2D Lists)
@@ -403,6 +406,10 @@ print(dirty_dozen[1][1][1])    # This will print Kale, its chosing the second li
 ## Loops
 
 ![img](image.png)
+Two types of loops.<br>
+<strong>Indefinite iteration</strong>, where the nmbers of times the loop is executed depends on how many times a condition is met.<br>
+<strong>Definite iteration</strong>, where the tnumber of times the loop will be executed is defines in advanced (usually based on the collection size).
+<br>
 
 Loops are control flow statements.
 Python `for` loops execute a block of code a fixed number of times.
@@ -410,16 +417,21 @@ You can iterate over a range, string or sequence etc.
 <https://www.programiz.com/python-programming/for-loop>
 
 ```python
+# for loops follow this pattern.
+for <temporary variable> in <collection>:
+  <action>
+
 states_of_america = ["Texas", "Utah", "Florida"]
 
 for states in states_of_america:
     print(states)
-    print(states + " of America")
+
+for states in states_of_america: print(states)
 
 
-# iterate from i = 0 to i = 3
-for i in range(4):
-    print(i)
+for number in range(5):
+    print("This is number " + str(number + 1))
+          
 
 languages = ['Swift', 'Python', 'Go']
 # access items of a list using for loop
@@ -431,23 +443,19 @@ Python `while` loop is used to run a block code until a certain condition is met
 <https://www.programiz.com/python-programming/while-loop>
 
 ```python
-# program to display numbers from 1 to 5
+# While loops follow this pattern.
+while <conditional statement>:
+  <action>
 
-# initialize the variable
-i = 1   # condition, it should be a true statement.
-n = 5
+count = 0 
+while count <= 3:
+    count += 1      # Adds 1 to the count each iteration.
+    print(count)
 
-# while loop from i = 1 to 5
-while i <= n:
-    print('i is less than n')
-
-while not i <= n:
-    print('i is not less than n')
-    # Using a negation of 'not'.
+# Multiple lines, notice the ; <--
+while count <= 3: print(count); count += 1
 
 ```
-
-
 
 ## Functions
 
@@ -464,46 +472,3 @@ def my_function():
 
 my_function()   # Since functins only run when they are called, we need to call it.
 ```
-
-<!-- 
-### Dictionaries
-
-Dictionaries are used to store data values in "key:value" pairs.
-A dictionary is a collection which is ordered, changeable and do not allow duplicates.
-
-```python
-
-# List data type and dictionary data type, notice the {} brackets
-student_grades_list = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
-student_grades_dict = {"Marry": 8.2, "John": 4.2, "Stacey": 5.9}
-
-thisdict = {"brand": "Ford", "model": "Mustang", "year": 1964}  # "brand", "model, "year" are key paired with values
-print(thisdict["brand"])  # output: "Ford"
-
-# do not allow duplicate in dictionary data:
-thisdict = {
-    "brand": "Ford", 
-    "model": "Mustang",
-    "year": 1964,
-    "year": 2020
-}
-
-print(thisdict)         # output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020}
-# there is no year 1964
-
-print(len(thisdict))    # this counts how many keys in the dictionary, which is 3, consisting of "brand", "model, "year" .
-
-# Will add the list together.
-mysum = sum(student_grades_list)
-
-length = len(student_grades_dict)
-mean = mysum / length
-print(mean)
-
-max_grades = max(student_grades_list)
-print(max_grades)
-
-print(student_grades_list.count(10.0))  # Counts the amount of times 10 was in the list.
-
-print(random.choice(Name_of_List))  # Can also directly randomly pick from the list.
-``` -->
