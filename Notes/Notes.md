@@ -506,13 +506,62 @@ print(scoops_sold)
 
 ## List Comprehensions
 
+List Comprehensions provide a concise was for creating lists.
+Can be used to create new lists from existing lists. Instead of using the `for`, `in` and `else` functions, we can use the `for` and `in` keywords in the list comprehension.
+
+https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet
+
 ```python
 new_list = [<expression> for <element> in <collection>]
 
+#Intergers
+numbers = [12, 99, 100]
+even = [int for int in numbers if int % 2 == 0]
+
+#Strings
+fruits = ['apple', 'banana', 'orange', 'pear', 'kiwi', 'apple', 'banana']
+edible = [print(fruit) for fruit in fruits ]
+
+#Booleans
+bits = [False, True, False, False, True, False]
+new_bits = [1 if bits == True else 0 in bits]
+
+# Old method.
+for b in bits:
+    if b == True:
+        new_bits.append(1)
+    else:
+        new_bits.append(0)
 
 
+numbers = [2, -1, 79, 33, -45]
+only_negative_doubled = []
+
+for num in numbers:
+  if num < 0: 
+    only_negative_doubled.append(num * 2)
+
+
+only_negative_doubled = [num * 2 for num in numbers if num < 0]
+
+
+# Using an `if` `else` statment within list comprehensions.
+numbers = [2, -1, 79, 33, -45]
+doubled = [num * 2 if num < 0 else num * 3 for num in numbers ]
+print(doubled)
+
+
+
+#Syntax examples for each.
+numbers = [2, -1, 79, 33, -45]
+
+no_if   = [num * 2 for num in numbers]
+if_only = [num * 2 for num in numbers if num < 0]
+if_else = [num * 2 if num < 0 else num * 3 for num in numbers]
 
 ```
+
+<br>
 
 ## Functions
 
