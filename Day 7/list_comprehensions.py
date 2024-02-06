@@ -1,6 +1,7 @@
 
 #* Example formatting below.
-new_list = [<expression> for <element> in <collection>]
+# new_list = [<expression> for <element> in <collection>]
+# new_list = [new_item for item in list]
 
 
 numbers = [2, -1, 79, 33, -45]

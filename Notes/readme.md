@@ -578,6 +578,8 @@ if_else = [num * 2 if num < 0 else num * 3 for num in numbers]
 
 ## Functions
 
+<https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-functions/cheatsheet>
+
 Functions are a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time. Different to loops which are used to repeat a block of code, functions are used to perform a specific task.
 
 Functions are a way to group code together. There are built in functions and you can also create your own.
