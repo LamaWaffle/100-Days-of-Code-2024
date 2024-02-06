@@ -1,4 +1,4 @@
-## Python
+# Python
 
 ### Print
 
@@ -455,10 +455,13 @@ while count <= 3:
 # Multiple lines, notice the ; <--
 while count <= 3: print(count); count += 1
 ```
+
 <br>
 
 ### Loop Breaks
+
 Completely terminates the loop and exits it immediately. Execution continues after the loop.
+
 ```python
 items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
 
@@ -475,11 +478,14 @@ while counter < 10:
         print ('Won!')
         break
 else:
-	print ('done')
+print ('done')
 # Won!
 ```
+
 ### Loop Continues
+
 Continues do not terminate the loop. It skips the current iteration and continues to the next iteration of the loop.
+
 ```python
 ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
 
@@ -488,8 +494,11 @@ for int in ages:
     continue
   print(int)
 ```
+
 ### Nested Loops
+
 Useful for pulling data from nested lists.
+
 ```python
 sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
 
@@ -501,7 +510,9 @@ for location in sales_data:
     scoops_sold += scoops
     print(scoops_sold)
 print(scoops_sold)
+
 ```
+
 <br>
 
 ## List Comprehensions
@@ -509,7 +520,7 @@ print(scoops_sold)
 List Comprehensions provide a concise was for creating lists.
 Can be used to create new lists from existing lists. Instead of using the `for`, `in` and `else` functions, we can use the `for` and `in` keywords in the list comprehension.
 
-https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet
+<https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet>
 
 ```python
 #new_list = [<expression> for <element> in <collection>]
