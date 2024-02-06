@@ -512,7 +512,9 @@ Can be used to create new lists from existing lists. Instead of using the `for`,
 https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-loops/cheatsheet
 
 ```python
-new_list = [<expression> for <element> in <collection>]
+#new_list = [<expression> for <element> in <collection>]
+new_list = [new_item for item in list]
+new_list = [new_item for item in list if condition]
 
 #Intergers
 numbers = [12, 99, 100]
