@@ -1,4 +1,4 @@
-#Step 2
+#Step 1
 
 import random
 

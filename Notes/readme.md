@@ -138,6 +138,9 @@ print("Your score is " + str(score) + ", your height is " + str(height) + " and 
 
 # Just need to add an 'f' and variable inside {}:
 print(f"Your score is {score}, your height is {height} and are you winning? {is_winning}")
+
+# For Floats, you can also specify how many decimal places you want to round to.
+print(f{amount:.2f})        # This will round to 2 decimal places.
 ```
 
 <br>
@@ -585,6 +588,12 @@ Functions are a convenient way to divide your code into useful blocks, allowing 
 Functions are a way to group code together. There are built in functions and you can also create your own.
 For example, print() and len() are built in functions.
 
+There are two types of functions: <br>
+
+- Perform a task such as Print()
+- Calculate and return a value such as round(), len()
+
+
 ```python
 # To create our own function, we use the def keyword. (Notice the indent.)
 def my_function():
@@ -592,4 +601,39 @@ def my_function():
     print('Bye')
 
 my_function()   # Since functins only run when they are called, we need to call it.
+```
+
+### Parameters and Arguments
+
+Parameters and arguments are used to pass information to a function.
+<br>
+<b>Parameters</b> are temporary variables that are used within the function. <br>
+<b>Arguments</b> are the actual values that are passed to the function when it is called.
+
+
+```python
+def happy_birthday(name):               # name is the parameter.
+    print(f"Happy Birthday {name}")     
+happy_birthday("Nat")                   # Nat (name) is the argument.
+
+                                        # Multiple parameters and arguments (positions matter).
+def happy_birthday(name, age):          # name and age are the parameters.
+    print(f"Happy Birthday {name}, you are {age} years old.")
+happy_birthday("Nat", 25)               # Nat and 23 are the arguments.
+```
+
+### Return Statement and Multiple Returns
+
+Return statement is used to exit a function and go back to the place where it was called. It can also be used to send back an expression to the caller.
+
+```python
+def add_func(x, y):
+    z = x + y
+    return z
+
+def subtract_func(x, y):
+    z = x - y
+    return z
+
+print(add_func(1, 2))       # Output: 3, calls the func above.
 ```

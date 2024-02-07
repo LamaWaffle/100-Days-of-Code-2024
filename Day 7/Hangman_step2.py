@@ -6,23 +6,26 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 
 #Testing code
-print(f'Pssst, the solution is {chosen_word}.')
+# print(f'Pssst, the solution is {chosen_word}.')
+
+
+
 
 #TODO-1: - Create an empty List called display.
 #For each letter in the chosen_word, add a "_" to 'display'.
 #So if the chosen_word was "apple", display should be ["_", "_", "_", "_", "_"] with 5 "_" representing each letter to guess.
 
-#! Create a 'display' list, each letter apppends the blank space.
+# Create a 'display' list, each letter apppends the blank space.
 display = []
 
-for each_letter in chosen_word:     
-    display += "_"
-print(display)
-
-#! An alternative way is below.
-# for n in range(len(chosen_word)):   
+# for each_letter in chosen_word:     
 #     display += "_"
 # print(display)
+
+#? An alternative option to the above for loop is to use the range function.
+for n in range(len(chosen_word)):   
+    display += "_"
+print(display)
 
 guess = input("Guess a letter: \n").lower()
 
@@ -37,8 +40,10 @@ for position in range(len(chosen_word)):
     if letter == guess:
         display[position] = guess
 
-print(display)
+
 
 
 # TODO-3: - Print 'display' and you should see the guessed letter in the correct position and every other letter replace with "_".
 # Hint - Don't worry about getting the user to guess the next letter. We'll tackle that in step 3.
+
+print(display)
