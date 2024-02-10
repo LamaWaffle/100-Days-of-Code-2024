@@ -607,9 +607,8 @@ my_function()   # Since functins only run when they are called, we need to call 
 
 Parameters and arguments are used to pass information to a function.
 <br>
-<b>Parameters</b> are temporary variables that are used within the function. <br>
-<b>Arguments</b> are the actual values that are passed to the function when it is called.
-
+**Parameters** are temporary variables that are used within the function.
+**Arguments** are the actual values that are passed to the function when it is called.
 
 ```python
 def happy_birthday(name):               # name is the parameter.
