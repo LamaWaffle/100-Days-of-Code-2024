@@ -38,9 +38,30 @@
 # greeting('Matthew', 24)
 
 
-def get_greeting(name):
-    return f"Hi {name}"
+# def get_greeting(name):
+#     return f"Hi {name}"
 
-message = get_greeting("Matty")
+# message = get_greeting("Matty")
 
-print(message)
+# print(message)
+
+
+
+# string = "abc123"
+# reversed_string = string[::-1]
+# print(reversed_string)
+
+
+languages = ['Swift', 'Python', 'Go']
+# access items of a list using for loop
+for item in languages:
+    print(languages)
+    
+    for letter in item:
+        print(letter)
+
+
+# languages = ['Swift', 'Python', 'Go']
+# # access items of a list using for loop
+# for i in languages:
+#     print(i)

@@ -13,10 +13,12 @@ chosen_word = random.choice(word_list)
 
 print(f'Pssst, the solution is {chosen_word}.')     #Testing code - helps debugging.
 
-letter_guess = input("Guess a letter:\n").lower()   # User inputs their guess, converts to lowercase.
+guess = input("Guess a letter:\n").lower()   # User inputs their guess, converts to lowercase.
 
 for letter in chosen_word:                          # Giving a category, if the letter matches the guess.. do this or that.
-    if letter == letter_guess:                      # Comparing if the letter is equal to the guess.
+    if letter == guess:                      # Comparing if the letter is equal to the guess.
         print("Right")
     else:
         print("Wrong")
+
+

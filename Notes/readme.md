@@ -36,8 +36,6 @@ print("Hello World\nHello World")
 
 In Python programming, a data type is the classification of data that defines the possible operations that can be done on the object.
 
-![img.png](img.png)
-
 ### Strings
 
 "Abc" or "123" with double or single quotes.
@@ -369,6 +367,11 @@ inventory.index("twin bed")         # output for this function will be 0 (list.i
 
 
 inventory[0:3]                      # This is a slice, ['start':'no more than x']
+
+string = "abc123"                   # This will output the string reversed
+reversed_string = string[::-1]
+print(reversed_string)              
+
 inventory.count("twin bed")         # This is counting how many 'twin bed' strings there are.
 inventory.pop(4)                    # Pop can specify which index and store the value in a variable.
 inventory.insert(10, "2")           # Adding string into index 11th position.
@@ -425,17 +428,14 @@ for <temporary variable> in <collection>:
   <action>
 
 states_of_america = ["Texas", "Utah", "Florida"]
-
 for states in states_of_america:
     print(states)
 
 for states in states_of_america: print(states)
 
-
 for number in range(5):
     print("This is number " + str(number + 1))
           
-
 languages = ['Swift', 'Python', 'Go']
 # access items of a list using for loop
 for i in languages:
