@@ -28,9 +28,12 @@ print(display)                                      # Prints out the blank lette
 #     display += '_'
 # print(display)
 
-guess = input("Guess a letter:\n").lower()  # User inputs their guess, converts to lowercase.
+guess = input("Guess a letter:\n").lower()          # User inputs their guess, converts to lowercase.
 
 
-for position in range(len(chosen_word)):	# interation in 0 to 6.
-    if position == guess:					# '0' == 'a' ?
-        display[position] = guess
+for index in range(len(chosen_word)):	            # interation over 0 to 6.
+    if chosen_word[index] == guess:					# Since this will is calling each letter, == 'a' ?
+        display[index] = guess                      # Updates the variable, the current list now updated with the guessed letters.
+
+
+print(display)                                      # Prints the current list now updated with the guessed letters.
