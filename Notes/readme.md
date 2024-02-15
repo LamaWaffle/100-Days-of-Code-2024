@@ -185,7 +185,7 @@ my_age += 4
 Modulo operator gives you the remainder result of uneven division
 
 ```python
-5 % 2  # 2, 2 , 1
+5 % 2  # = 2, with remainder 1
 # result is 1.
 
 ==  # Equal to.

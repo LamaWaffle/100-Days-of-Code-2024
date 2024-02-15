@@ -58,6 +58,7 @@ stages = ['''
 ''']
 
 end_of_the_game = False
+lives = 6
 
 word_list = [
     "aardvark",
@@ -89,7 +90,6 @@ word_list = [
 ]
 chosen_word = random.choice(word_list)
 
-lives = 6
 if lives == 0:
     end_of_the_game = True
 
@@ -111,7 +111,10 @@ while not end_of_the_game:
             display[index] = (guess)        # Updates the variable, the current list now updated with the guessed letters.
 
         elif chosen_word[index] != guess:
-            lives = lives - 1
+            lives -= 1
+            if lives == 0:
+                end_of_the_game = True
+                print("You Lose!")
     
     
     print(f"\n{' '.join(display)}")           # Join all the elements in the list and turn it into a String.
