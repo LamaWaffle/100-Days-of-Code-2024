@@ -1,4 +1,4 @@
-# Python
+# Python Notes
 
 ### Print
 
@@ -607,8 +607,17 @@ my_function()   # Since functins only run when they are called, we need to call 
 
 Parameters and arguments are used to pass information to a function.
 <br>
-**Parameters** are temporary variables that are used within the function.
-**Arguments** are the actual values that are passed to the function when it is called.
+```Parameters``` are temporary variables that are used within the function.
+```Arguments``` are the actual values that are passed to the function when it is called.
+
+There are three types of argument we can give a function. <br>
+Positional arguments, keyword arguments and default arguments.
+
+- Positional arguments are the most common and are passed to a function in the order they are defined.
+- Keyword arguments are identified by the parameter name.
+- Default arguments are used when the argument is not passed to the function.
+
+<br>
 
 ```python
 def happy_birthday(name):               # name is the parameter.
