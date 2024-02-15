@@ -17,11 +17,3 @@ def encrypt(plain_text, shift_amount):
 
 
 encrypt(plain_text=text, shift_amount=shift)        # Adding 'Keyword' arguments for the function.
-
-
-
-    ##HINT: How do you get the index of an item in a list:
-    #https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-in-a-list
-    ##🐛Bug alert: What happens if you try to encode the word 'civilization'?🐛
-
-
