@@ -460,6 +460,20 @@ while count <= 3: print(count); count += 1
 ```
 
 <br>
+You can run the program again by settings a condition to True.
+Example below:
+
+```python
+machine_on = True
+while machine_on:
+    print("Machine is running")
+    answer = input("Turn off now?")
+    
+    if answer == "yes":
+        machine_on = False
+```
+
+<br>
 
 ### Loop Breaks
 
