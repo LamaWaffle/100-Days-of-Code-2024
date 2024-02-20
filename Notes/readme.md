@@ -677,26 +677,73 @@ programming_dictionary = {
 # To call the diction, we need to include the key.
 print(programming_dictionary["Bug"])
 
+print(capitals.get("USA"))                  # Prints the value of the USA key.
+print(capitals.keys())                      # Prints the keys.
+print(capitals.values())                    # Prints the values.
+print(capitals.items())                     # Prints the items.
+
 # Adding new or modifing items to the dictionary.
 programming_dictionary['Loop'] = "This is a modifed definition."
+capitals.update({"Germany": "Berlin"})      # Adds a new key/value pair.
 
 # You can create an empty dictionary.
 empty_dict = {}
 
 # Additonally, you can wipe an existing dictionary; modifies the dict to an empty string.
 programming_dictionary = {}
+
+capitals.pop("China")                       # Removes the key/value China.
+capitals.popitem()                          # Removes the last added item.
+
 ```
 
 <br>
 
-Additionally, you can loop through a dictionary.
+### Common Dictionary Methods
 
 ```python
+# Creating a dictionary with string keys and integer values
+my_dict = {"apple": 1, "banana": 2, "cherry": 3}
+
+# Accessing a value by its key
+print(my_dict["apple"])  # Outputs: 1
+
+# Adding a new entry
+my_dict["date"] = 4
+print(my_dict)  # Outputs: {'apple': 1, 'banana': 2, 'cherry': 3, 'date': 4}
+
+# Updating an existing entry
+my_dict["apple"] = 5
+print(my_dict)  # Outputs: {'apple': 5, 'banana': 2, 'cherry': 3, 'date': 4}
+
+# Removing an entry using del
+del my_dict["banana"]
+print(my_dict)  # Outputs: {'apple': 5, 'cherry': 3, 'date': 4}
+
 # Loop through a dictionary.
 for x in programming_dictionary:
     print(x)                            # This will print the keys.
     print(programming_dictionary[x])    # This will print the values.
+
+# Iterating over keys
+for key in my_dict:
+    print(key)
+
+# Iterating over values
+for value in my_dict.values():
+    print(value)
+
+# Iterating over keys and values
+for key, value in my_dict.items():
+    print(f"Key: {key}, Value: {value}")
+
+if "apple" in my_dict:
+    print("Apple is in the dictionary")
+
+
+print(len(my_dict))  # Outputs: 3
 ```
+
 
 <br>
 
