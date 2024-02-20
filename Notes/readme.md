@@ -710,7 +710,7 @@ print(my_dict["apple"])  # Outputs: 1
 
 # Adding a new entry
 my_dict["date"] = 4
-print(my_dict)  # Outputs: {'apple': 1, 'banana': 2, 'cherry': 3, 'date': 4}
+my_dict.update({"apple": 5})    # This will update the value of the key apple to 5.
 
 # Updating an existing entry
 my_dict["apple"] = 5
