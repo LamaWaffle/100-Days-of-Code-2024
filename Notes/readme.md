@@ -600,7 +600,7 @@ if_else = [num * 2 if num < 0 else num * 3 for num in numbers]
 Functions are a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time. Different to loops which are used to repeat a block of code, functions are used to perform a specific task.
 
 Functions are a way to group code together. There are built in functions and you can also create your own.
-For example, print() and len() are built in functions.
+For example, `print()` and `len()` are built in functions.
 
 There are two types of functions: <br>
 
@@ -617,11 +617,15 @@ def my_function():
 my_function()   # Since functins only run when they are called, we need to call it.
 ```
 
+<br>
+
+## Functions with Inputs
+
 ### Parameters and Arguments
 
 Parameters and arguments are used to pass information to a function.
 <br>
-```Parameters``` are temporary variables that are used within the function.
+```Parameters``` are temporary variables that are used within the function. <br>
 ```Arguments``` are the actual values that are passed to the function when it is called.
 
 There are three types of argument we can give a function. <br>
@@ -662,6 +666,36 @@ print(add_func(1, 2))       # Output: 3, calls the func above.
 
 <br>
 
+## Functions with Outputs
+
+Functions can also return values. This is useful when you want to use the result of a function in another part of your program. 
+
+The `return` statement represents the end of the function. It must output the result of the function (any data type)
+
+```python
+def my_function(a, b):
+    return a * b                # This is the end of the function, and the output.
+
+output = my_function(10, 20)    
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
 ## Dictionary
 
 Dictionaries are used to store data values in key:value pairs. Dictionaries are written with curly brackets, and they have keys and values. These can be seperated by a colon.
@@ -677,14 +711,8 @@ programming_dictionary = {
 # To call the diction, we need to include the key.
 print(programming_dictionary["Bug"])
 
-print(capitals.get("USA"))                  # Prints the value of the USA key.
-print(capitals.keys())                      # Prints the keys.
-print(capitals.values())                    # Prints the values.
-print(capitals.items())                     # Prints the items.
-
 # Adding new or modifing items to the dictionary.
-programming_dictionary['Loop'] = "This is a modifed definition."
-capitals.update({"Germany": "Berlin"})      # Adds a new key/value pair.
+programming_dictionary['Loop'] = "This is a modifed definition."  
 
 # You can create an empty dictionary.
 empty_dict = {}
@@ -714,11 +742,9 @@ my_dict.update({"apple": 5})    # This will update the value of the key apple to
 
 # Updating an existing entry
 my_dict["apple"] = 5
-print(my_dict)  # Outputs: {'apple': 5, 'banana': 2, 'cherry': 3, 'date': 4}
 
 # Removing an entry using del
 del my_dict["banana"]
-print(my_dict)  # Outputs: {'apple': 5, 'cherry': 3, 'date': 4}
 
 # Loop through a dictionary.
 for x in programming_dictionary:
@@ -739,11 +765,7 @@ for key, value in my_dict.items():
 
 if "apple" in my_dict:
     print("Apple is in the dictionary")
-
-
-print(len(my_dict))  # Outputs: 3
 ```
-
 
 <br>
 
@@ -778,5 +800,4 @@ travel_log = [                                  # Notice the brackets for travel
  "total_visits": 6
  }
 ]
-
 ```
