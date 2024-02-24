@@ -679,13 +679,21 @@ def my_function(a, b):
 output = my_function(10, 20)    
 ```
 
+<br>
 
+### Functions with Multiple Returns
 
+We can also return multiple values from a function.
 
+```python
+def top_tourist_locations_italy():
+    first = "Rome"
+    second = "Venice"
+    third = "Florence"
+    return first, second, third
 
-
-
-
+most_popular1, most_popular2, most_popular3 = top_tourist_locations_italy()
+```
 
 
 
